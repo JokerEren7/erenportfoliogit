@@ -1,0 +1,101 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mijn Portfolio</title>
+        <link rel="stylesheet" href="css/styles.css">
+
+    </head>
+
+    <body>
+
+
+        <div id="intro" class="page">
+            <div class="container">
+                <h2>Eren Atalay</h2>
+
+                <div class="circle-container">
+                    <div class="creative">Creatief</div>
+                    <img src="images/erenfoto2-removebg-preview.png" alt="Mijn Foto" class="profile-pic">
+                    <div class="developer">Software Developer</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about" class="page2">
+            <div class="container">
+                <div class="info1">
+                    <h3>Over Mij</h3>
+                    <p class="kleurovermij">Mijn naam is Eren Atalay en ik ben geboren in 30-03-2004 en ik ben student bij
+                        Het Summa College in Eindhoven.</p>
+                </div>
+                <div class="mercedescontainer">
+                    <img class="imgfoto" src="images/Mercedes.jpg" alt="Mercedes">
+                    <p class="tekstdroomauto">Mijn droomauto Mercedes AMG GT coupé</p>
+                </div>
+
+                <div class="summacontainer">
+                    <img id="summaimage" src="images/summa.png" alt="Mercedes">
+                    <p class="tekstdroomauto">Summa College Mbo 4</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="portfolio" class="page2">
+            <div class="container">
+                <div class="info1">
+                    <h4 class="tekstdroomauto">Portfolio</h4>
+                    <p class="kleurovermij">Hier aantal leuke voorbeeld projecten wat ik heb gemaakt.</p>
+                </div>
+                <div class="gitprojects">
+                    <div class="gitproject">
+                        <a href="https://github.com/JokerEren7/takencrud.git" target="_blank"><img
+                                src="images/takenlijst.png" class="gitfotos" alt="Project 1"></a>
+                        <p class="project-description">Takenlijst crud</p>
+                    </div>
+                    <div class="gitproject">
+                        <a href="https://github.com/JokerEren7/volledigsongs_laravel.git" target="_blank"><img
+                                src="images/volledigsongsimg.png" class="gitfotos" alt="Project 2"></a>
+                        <p class="project-description">Laravel crud project met api van het zoeken van nummers</p>
+                    </div>
+                    <div class="gitproject">
+                        <a href="https://github.com/JokerEren7/vue_opdrachtjes.git" target="_blank"><img
+                                src="images/vueprojectjes.png" class="gitfotos" target="_blank" alt="Project 3"></a>
+                        <p class="project-description">Hier heb ik kleine vue-opdrachtjes gemaakt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 Eren Atalay</p>
+            </div>
+        </footer>
+        <script>
+            window.addEventListener('scroll', function () {
+                var element = document.querySelector('.mercedescontainer');
+                var position = element.getBoundingClientRect();
+
+                // Als de container binnen het zichtbare deel van het scherm komt
+                if (position.top < window.innerHeight) {
+                    element.classList.add('show');
+                }
+            });
+            window.addEventListener('scroll', function () {
+                var element = document.querySelector('.summacontainer');
+                var position = element.getBoundingClientRect();
+
+                // Als de container binnen het zichtbare deel van het scherm komt
+                if (position.top < window.innerHeight) {
+                    element.classList.add('show');
+                }
+            });
+
+        </script>
+    </body>
+
+    </html>
